@@ -1,0 +1,8 @@
+{
+    "nouns": ["man", "woman", "child", "family", "friend", "book", "chair", "house", "food", "water", "tree", "flower", "animal", "sun", "moon"],
+    "verbs": ["go", "come", "see", "hear", "eat", "drink", "sleep", "be", "have", "like", "want", "need"],
+    "adjectives": ["big", "small", "long", "short", "red", "blue", "green", "yellow", "white", "black", "good", "bad", "hot", "cold", "new", "old"],
+    "pronouns": ["I", "you", "he", "she", "it", "we", "they", "my", "your", "his", "her", "its", "our", "their"],
+    "adverbs": ["quickly", "slowly", "quietly", "loudly", "always", "often", "sometimes", "never"],
+    "prepositions_conjunctions": ["in", "on", "at", "with", "by", "and", "but", "or", "because", "if"]
+}
