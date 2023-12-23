@@ -16,30 +16,31 @@ import json
 class Level1Vocabulary:
     def __init__(self, filename='vocabulary.json'):
         self.filename = filename
-        try:
-            with open(self.filename, 'r') as file:
-                self.vocabulary = json.load(file)
-        except FileNotFoundError:
-            self.vocabulary = {}
+        with open(self.filename, 'r') as file:
+            self.vocabulary = json.load(file)
 
     def analyze_vocabulary(self):
-        for category, words in self.vocabulary.items():
-            print(f"{category.title()}: {len(words)} words")
-            print(", ".join(words))
-            print()  # Adds a new line for better readability
+        for category, subcategories in self.vocabulary.items():
+            print(f"{category.title()}:")
+            for subcategory, words in subcategories.items():
+                print(f"  {subcategory.title()}: {len(words)} words")
+                print("  " + ", ".join(words))
+            print()  # New line for readability
 
-    def add_word(self, category, word):
+    def add_word(self, category, subcategory, word):
         if category in self.vocabulary:
-            if word not in self.vocabulary[category]:
-                self.vocabulary[category].append(word)
-                self._save_vocabulary()
-                print(f"Added '{word}' to {category}.")
+            if subcategory in self.vocabulary[category]:
+                if word not in self.vocabulary[category][subcategory]:
+                    self.vocabulary[category][subcategory].append(word)
+                    self._save_vocabulary()
+                    print(f"Added '{word}' to {category} -> {subcategory}.")
+                else:
+                    print(f"'{word}' already exists in {category} -> {subcategory}.")
             else:
-                print(f"'{word}' already exists in {category}.")
+                print(f"Subcategory '{subcategory}' not found in {category}.")
         else:
             print(f"Category '{category}' not found.")
 
     def _save_vocabulary(self):
         with open(self.filename, 'w') as file:
             json.dump(self.vocabulary, file, indent=4)
-

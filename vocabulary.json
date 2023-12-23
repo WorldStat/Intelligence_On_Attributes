@@ -1,8 +1,35 @@
 {
-    "nouns": ["man", "woman", "child", "family", "friend", "book", "chair", "house", "food", "water", "tree", "flower", "animal", "sun", "moon"],
-    "verbs": ["go", "come", "see", "hear", "eat", "drink", "sleep", "be", "have", "like", "want", "need"],
-    "adjectives": ["big", "small", "long", "short", "red", "blue", "green", "yellow", "white", "black", "good", "bad", "hot", "cold", "new", "old"],
-    "pronouns": ["I", "you", "he", "she", "it", "we", "they", "my", "your", "his", "her", "its", "our", "their"],
-    "adverbs": ["quickly", "slowly", "quietly", "loudly", "always", "often", "sometimes", "never"],
-    "prepositions_conjunctions": ["in", "on", "at", "with", "by", "and", "but", "or", "because", "if"]
+    "nouns": {
+        "people": ["man", "woman", "child", "teacher", "doctor", "student"],
+        "places": ["home", "school", "store", "park", "city", "country", "road", "beach", "mountain"],
+        "living_things": ["animal", "bird", "fish", "dog", "cat", "tree", "plant", "flower"],
+        "objects": ["book", "chair", "table", "bed", "phone", "computer", "car", "bike", "ball"],
+        "food_drink": ["apple", "banana", "bread", "rice", "chicken", "water", "milk", "tea", "coffee"],
+        "nature_weather": ["sun", "moon", "star", "sky", "cloud", "rain", "wind", "snow"],
+        "body_parts": ["head", "face", "eye", "ear", "nose", "mouth", "hand", "foot"]
+    },
+    "verbs": {
+        "actions": ["go", "come", "see", "hear", "eat", "drink", "sleep", "walk", "run", "play", "stop", "start", "open", "close", "read", "write", "speak", "listen", "buy", "sell", "work", "use"],
+        "states": ["be", "have", "do", "like", "want", "need", "feel", "think", "know", "love", "hate"]
+    },
+    "adjectives": {
+        "size_quantity": ["big", "small", "tall", "short", "long", "large", "little", "few", "many"],
+        "color": ["red", "blue", "green", "yellow", "white", "black", "brown", "pink", "purple", "orange"],
+        "quality_condition": ["good", "bad", "easy", "hard", "clean", "dirty", "hot", "cold", "new", "old", "happy", "sad", "fast", "slow", "busy", "free", "heavy", "light", "strong", "weak", "full", "empty"],
+        "time": ["early", "late", "young", "old", "new", "fast", "slow", "first", "last", "next", "previous"]
+    },
+    "pronouns": {
+        "personal": ["I", "you", "he", "she", "it", "we", "they"],
+        "possessive": ["my", "your", "his", "her", "its", "our", "their"]
+    },
+    "adverbs": {
+        "manner": ["well", "badly", "hard", "fast", "slowly", "quickly", "quietly", "loudly"],
+        "time": ["now", "then", "soon", "later", "today", "tomorrow", "yesterday", "always", "often", "sometimes", "never"],
+        "place": ["here", "there", "everywhere", "somewhere", "anywhere", "inside", "outside"],
+        "degree": ["very", "too", "quite", "almost", "enough"]
+    },
+    "prepositions_conjunctions": {
+        "prepositions": ["in", "on", "at", "with", "by", "for", "from", "to", "about", "above", "below", "under", "over", "between", "into", "through", "during", "before", "after", "against"],
+        "conjunctions": ["and", "but", "or", "because", "if", "when", "while", "although", "so", "until", "unless"]
+    }
 }
